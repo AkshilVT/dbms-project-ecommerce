@@ -1,7 +1,8 @@
 // import { response } from 'express';
 import React, { useState, useEffect } from 'react';
 import './index.css';
-import './App.css'
+import './App.css';
+import img from './bg.png';
 function App() {
   
   const [merchants, setMerchants] = useState([]);
@@ -59,17 +60,21 @@ function App() {
 
 
    }
-
+  
   return (
-    
+   
     <div>
+      
       {console.log(typeof(merchants))}
       {console.table(merchants)}
       <h1 align="center">E-Commerce Management System</h1>
       {/* {merchants.map(home => <div id="llll" className='flex text-red-500'><div id="l">{home.user_id}</div><div id="l">{home.f_name}</div><div id="l">{home.l_name}</div></div>)} */}
-    {/* <div id='books'>
+    <div id='books'>
+    
     <span id="heading">User Details</span>
+    
     <table id="results" className="table text-center table-hover">
+    
       <thead id="header">
         <tr>
           <th scope="col">User ID</th>
@@ -94,9 +99,10 @@ function App() {
           </tr>
         );
       })}
+     
     </table>
     
-    </div> */}
+    </div>
     
     
     {/* <div id='books'>
@@ -202,7 +208,7 @@ function App() {
     </table>
     
     </div> */}
-    <div id='books'>
+    {/* <div id='books'>
     <span id="heading">Cart Info</span>
     <table id="results" className="table text-center table-hover">
       <thead id="header">
@@ -229,7 +235,7 @@ function App() {
       })}
     </table>
     
-    </div>
+    </div> */}
 
     <div class="center">  
     <button type="button">Cancelled Orders</button>
